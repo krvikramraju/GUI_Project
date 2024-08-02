@@ -32,12 +32,12 @@ def password_validation():
     if pass1 == pass2:
         if len(pass1) < 8:
             mb.showwarning("Validation Result", "Password must be at least 8 characters long.")
-            return FALSE
+            return False
         else:
-            return TRUE
+            return True
     elif pass1 != pass2:
         mb.showwarning("Validation Result", "Passwords do not match. Please re-enter")
-        return FALSE
+        return False
 
 
 #clear values in the form
